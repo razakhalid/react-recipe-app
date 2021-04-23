@@ -21,7 +21,7 @@ export default function RecipeSummary(props) {
             </div>
           </div>
         </div>
-        <span class="material-icons-outlined">expand_more</span>{" "}
+        <span className="material-icons-outlined">expand_more</span>{" "}
       </div>
     </div>
   );

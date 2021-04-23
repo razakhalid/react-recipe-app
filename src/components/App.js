@@ -9,15 +9,15 @@ const LOCAL_STORAGE_KEY = "cookingwithReact.recipes";
 function App() {
   const sampleRecipes = [
     {
-      name: "Recipe 1",
+      name: "Sample Recipe",
       id: 1,
       cookTime: "1 hr",
       servings: 3,
-      instructions: "Cook that shit",
+      instructions: "Defrost chicken. Cook till brown. Serve.",
       ingredients: [
         {
           id: 1,
-          name: "Ingredient 1",
+          name: "Chicken",
           amount: "2 lbs",
         },
       ],
@@ -84,12 +84,6 @@ function App() {
 
   return (
     <>
-      <div className="navbar">
-        <div className="search-wrapper">
-          <input type="text" />
-          <button>Search</button>
-        </div>
-      </div>
       <RecipeContext.Provider value={recipeContextValue}>
         <RecipeList recipes={recipes} />
         {/* <Recipe /> */}

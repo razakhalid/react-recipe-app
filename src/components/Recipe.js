@@ -49,7 +49,7 @@ export default function Recipe(props) {
             </div>
           </div>
           <div className="recipe__icon-container">
-            <span class="material-icons" onClick={() => setSelected(false)}>
+            <span className="material-icons" onClick={() => setSelected(false)}>
               expand_less
             </span>
           </div>
