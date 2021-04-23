@@ -1,9 +1,6 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import Recipe from "./Recipe";
 import { RecipeContext } from "./App";
-import _ from "lodash";
-import RecipeSummary from "./RecipeSummary";
-import { Link } from "react-router-dom";
 
 export default function RecipeList({ recipes }) {
   const { handleRecipeAdd } = useContext(RecipeContext);

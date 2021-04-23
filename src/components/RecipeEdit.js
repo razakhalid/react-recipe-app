@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import RecipeIngredientEdit from "./RecipeIngredientEdit";
 import { RecipeContext } from "./App";
-import ImageUploader from "react-images-upload";
 
 export default function RecipeEdit({ recipe }) {
   const { handleRecipeChange, handleRecipeSelect } = useContext(RecipeContext);

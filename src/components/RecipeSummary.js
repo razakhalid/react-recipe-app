@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RecipeSummary(props) {
   //   const { handleRecipeDelete, handleRecipeSelect } = useContext(RecipeContext);
-  const { id, name, cookTime, servings } = props;
+  const { name, cookTime, servings } = props;
   return (
     <div>
       <div className="recipe-summary">

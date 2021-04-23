@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import IngredientList from "./IngredientList";
 import { RecipeContext } from "./App";
+import IngredientList from "./IngredientList";
 
 export default function Recipe(props) {
   const { handleRecipeDelete, handleRecipeSelect } = useContext(RecipeContext);
@@ -44,9 +44,9 @@ export default function Recipe(props) {
           </div>
           <div className="recipe__row">
             <span className="recipe__label">Ingredients:</span>
-            {/* <div className="recipe__value recipe__value--indented">
-      <IngredientList ingredients={ingredients} />
-    </div> */}
+            <div className="recipe__value recipe__value--indented">
+              <IngredientList ingredients={ingredients} />
+            </div>
           </div>
           <div className="recipe__icon-container">
             <span class="material-icons" onClick={() => setSelected(false)}>

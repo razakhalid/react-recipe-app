@@ -1,14 +1,12 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import RecipeList from "./RecipeList";
 import "../css/App.css";
 import RecipeEdit from "./RecipeEdit";
-import Recipe from "./Recipe";
 
 export const RecipeContext = React.createContext();
 const LOCAL_STORAGE_KEY = "cookingwithReact.recipes";
 
 function App() {
-  const [search, setSearch] = useState("");
   const sampleRecipes = [
     {
       name: "Recipe 1",
