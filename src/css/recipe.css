@@ -1,0 +1,51 @@
+.recipe {
+  padding: 20px;
+  padding-bottom: 20px;
+  background-color: var(--card-background);
+  width: 90%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  margin-top: var(--margin-2);
+  margin-bottom: var(--margin-1);
+}
+
+.recipe__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.recipe__title {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.recipe__row {
+  margin: 10px;
+}
+
+.recipe__label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.recipe__value {
+  font-weight: 300;
+  overflow-wrap: break-word;
+}
+
+.recipe__value--indented {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.recipe__instructions {
+  white-space: pre-wrap;
+  /* min-height: 100px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe__icon-container {
+  text-align: center;
+}
